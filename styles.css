@@ -721,7 +721,7 @@ body {
 
 /* Website Statistics Container */
 .stats-container {
-    max-width: 0%;
+    max-width: 15%;
     margin: 20px auto;
     padding: 20px;
     background: #f8fafc;
@@ -729,6 +729,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
     text-align: center;
+    display: none; /* hide the stats container while keeping script execution */
 }
 
 .stats-container h3 {
@@ -741,7 +742,7 @@ body {
 /* Responsive design for stats container */
 @media (max-width: 768px) {
     .stats-container {
-        max-width: 0%;
+        max-width: 50%;
         margin: 15px auto;
         padding: 15px;
     }
@@ -749,10 +750,8 @@ body {
 
 @media (max-width: 480px) {
     .stats-container {
-        max-width: 0%;
+        max-width: 50%;
         margin: 10px auto;
         padding: 10px;
     }
 }
-
-
