@@ -721,7 +721,7 @@ body {
 
 /* Website Statistics Container */
 .stats-container {
-    max-width: 15%;
+    max-width: 0%;
     margin: 20px auto;
     padding: 20px;
     background: #f8fafc;
@@ -741,7 +741,7 @@ body {
 /* Responsive design for stats container */
 @media (max-width: 768px) {
     .stats-container {
-        max-width: 50%;
+        max-width: 0%;
         margin: 15px auto;
         padding: 15px;
     }
@@ -749,9 +749,10 @@ body {
 
 @media (max-width: 480px) {
     .stats-container {
-        max-width: 50%;
+        max-width: 0%;
         margin: 10px auto;
         padding: 10px;
     }
 }
+
 
