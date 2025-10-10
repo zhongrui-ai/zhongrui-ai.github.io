@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhong Rui - Homepage </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="ruizhong_icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+            </div>
+            <div class="terminal-title">ruizhong@robotics:~$</div>
+        </div>
+        
+        <div class="terminal-body">
+            <!-- Header Section -->
+            <div class="section">
+                <div class="command-line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="output">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="ruizhong.png" alt="Profile Photo" id="profile-img">
+                        </div>
+                        <div class="profile-info">
+                            <h1 class="name">Rui Zhong 钟睿</h1>
+                            <h2 class="title">Humanoid Robotics & Wearable Exoskeleton & Embodied AI</h2>
+                            <p class="affiliation">Master's Student | National University of Defense Technology, China</p>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <span class="label">Email:</span>
+                                    <span class="value">zhongrui19@nudt.edu.cn</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="label">BiliBili:</span>
+                                    <span class="value"><a href="https://space.bilibili.com/521843254" target="_blank">_Tuzki_</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="label">Google Scholar:</span>
+                                    <span class="value"><a href="https://scholar.google.com/citations?user=V9G048AAAAAJ" target="_blank">Scholar Profile</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="section">
+                <div class="command-line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat about.txt</span>
+                </div>
+                <div class="output">
+                    <div class="about-content">
+                        <p>
+                            I am a third-year Master's student at the National University of Defense Technology (NUDT), 
+                            where I am fortunate to be advised by Professor Huimin Lu. My research centers on wearable 
+                            exoskeleton and humanoid robot manipulation. Before that, I completed my Bachelor's degree 
+                            at NUDT. During my undergraduate studies (2020-2023), I participated in the RoboMaster competition for 
+                            four consecutive years and served as Team Leader.
+                        </p>
+                        
+                        <p>My current work involves:</p>
+                        <ul>
+                            <li>Ergonomic adaptation and system design for exoskeletons, encompassing both hardware and software development.</li>
+                            <li>Building robot teleoperation systems for intuitive and effective human-robot interaction.</li>
+                            <li>Investigating vision-language-action (VLA) imitation learning for humanoid robots.</li>
+                        </ul>
+                        
+                        <p>
+                            I am deeply passionate about robotics, especially the challenge of building complete systems 
+                            from the ground up and endowing them with intelligent behavior. My ultimate aspiration is to 
+                            become an all-around engineer — the kind who could rival Tony Stark!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Section -->
+            <div class="section">
+                <div class="command-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls publications/</span>
+                </div>
+                <div class="output">
+                    <div class="publications-container">
+                        <div class="publication-item">
+                            <div class="paper-video">
+                                <video poster="humanoidexo_poster.jpg" class="video-player" autoplay loop muted playsinline>
+                                    <source src="humanoidexo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="paper-info">
+                                <h3 class="paper-title">HumanoidExo: Scalable Whole-Body Humanoid Manipulation via Wearable Exoskeleton</h3>
+                                <div class="paper-authors">
+                                    <strong>Rui Zhong*</strong>, Yizhe Sun, Junjie Wen, Jinming Li, Chuang Cheng, Wei Dai, Zhiwen Zeng, Huimin Lu, Yichen Zhu*, Yi Xu
+                                </div>
+                                <div class="paper-venue">ArXiv preprint 2025</div>
+                                <div class="paper-links">
+                                    <a href="https://humanoid-exo.github.io/" target="_blank" class="link-btn">🌐 Project</a>
+                                    <a href="https://arxiv.org/abs/2510.03022" target="_blank" class="link-btn">📄 arXiv</a>
+                                    <button class="link-btn bibtex-btn" onclick="showBibtex('paper1')">📋 BibTeX</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="paper-video">
+                                <video poster="nuexo_poster.jpg" class="video-player" autoplay loop muted playsinline>
+                                    <source src="nuexo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="paper-info">
+                                <h3 class="paper-title">NuExo: A Wearable Exoskeleton Covering all Upper Limb ROM for Outdoor Data Collection and Teleoperation of Humanoid Robots</h3>
+                                <div class="paper-authors">
+                                    <strong>Rui Zhong*</strong>, Chuang Cheng*, Junpeng Xu, Yantong Wei, Ce Guo, Daoxun Zhang, Wei Dai, Huimin Lu
+                                </div>
+                                <div class="paper-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025</div>
+                                <div class="paper-links">
+                                    <a href="https://nubot-nuexo.github.io/" target="_blank" class="link-btn">🌐 Project</a>
+                                    <a href="https://arxiv.org/abs/2503.10554" target="_blank" class="link-btn">📄 arXiv</a>
+                                    <button class="link-btn bibtex-btn" onclick="showBibtex('paper2')">📋 BibTeX</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="section">
+                <div class="command-line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat skills.txt</span>
+                </div>
+                <div class="output">
+                    <div class="skills-content">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">ROS</span>
+                                    <span class="skill-tag">HTML</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Software</h4>
+                                <div class="skill-tags">                          
+                                    <span class="skill-tag">SolidWorks</span>
+                                    <span class="skill-tag">KeyShot</span>
+                                    <span class="skill-tag">MATLAB</span>
+                                    <span class="skill-tag">Pr</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Robotics Platforms</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Unitree G1</span>
+                                    <span class="skill-tag">Ti5 Robot</span>
+                                    <span class="skill-tag">Custom Humanoids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="section">
+                <div class="command-line">
+                    <span class="prompt">$</span>
+                    <span class="command">contact</span>
+                </div>
+                <div class="output">
+                    <div class="contact-content">
+                        <p>Feel free to reach out if you're interested in collaboration or have any questions about my research!</p>
+                        <div class="contact-buttons">
+                            <a href="mailto:zhongrui19@nudt.edu.cn" class="contact-btn">📧 Email Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal Cursor -->
+            <div class="terminal-cursor">
+                <span class="cursor-blink">█</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BibTeX Modal -->
+    <div id="bibtexModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>BibTeX Citation</h3>
+                <span class="close" onclick="closeBibtex()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <pre id="bibtexContent"></pre>
+                <button class="copy-btn" onclick="copyBibtex()">📋 Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

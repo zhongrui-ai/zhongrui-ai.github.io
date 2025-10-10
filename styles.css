@@ -1,0 +1,720 @@
+/* Terminal-style Academic Website CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+    background: #ffffff;
+    color: #1e3a8a;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Terminal Container */
+.terminal {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Terminal Header */
+.terminal-header {
+    background: #3b82f6;
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2563eb;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.btn.close { background: #ff5f56; }
+.btn.minimize { background: #ffbd2e; }
+.btn.maximize { background: #27ca3f; }
+
+.terminal-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Terminal Body */
+.terminal-body {
+    padding: 20px;
+    min-height: 80vh;
+}
+
+/* Command Line Styling */
+.command-line {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.prompt {
+    color: #3b82f6;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.command {
+    color: #1e3a8a;
+    font-weight: 500;
+}
+
+.output {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+    object-fit: cover;
+    display: block;
+}
+
+.image-placeholder {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #3b82f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.ascii-art {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #3b82f6;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name {
+    color: #3b82f6;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    font-family: 'Noto Sans SC', 'SimHei', '黑体', 'Microsoft YaHei', '微软雅黑', 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+}
+
+.title {
+    color: #1e3a8a;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.affiliation {
+    color: #64748b;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    color: #3b82f6;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.value {
+    color: #1e3a8a;
+}
+
+.value a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.value a:hover {
+    color: #1e3a8a;
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.8);
+}
+
+/* About Section */
+.about-content {
+    color: #374151;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.about-content li {
+    margin-bottom: 8px;
+    color: #3b82f6;
+}
+
+/* Publications Section */
+.publications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.publication-item {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.publication-item:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+.paper-video {
+    position: relative;
+    flex-shrink: 0;
+    width: 200px;
+    height: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: none; /* 确保没有滤镜影响亮度 */
+    opacity: 1; /* 确保不透明度为1 */
+}
+
+.video-player:hover {
+    transform: scale(1.02);
+}
+
+/* Hide video controls completely */
+.video-player::-webkit-media-controls {
+    display: none !important;
+}
+
+.video-player::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.video-player::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+.video-player::-webkit-media-controls-timeline {
+    display: none !important;
+}
+
+.video-player::-webkit-media-controls-current-time-display,
+.video-player::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    color: #64748b;
+    border: 2px dashed #94a3b8;
+}
+
+.play-button {
+    font-size: 24px;
+    color: #3b82f6;
+    margin-bottom: 8px;
+}
+
+.video-title {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.paper-info {
+    flex: 1;
+}
+
+.paper-title {
+    color: #1e3a8a;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.paper-authors {
+    color: #3b82f6;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.paper-venue {
+    color: #64748b;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.paper-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #f1f5f9;
+    color: #3b82f6;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    border-color: #3b82f6;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Skills Section */
+.skills-content h3 {
+    color: #3b82f6;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.skill-category h4 {
+    color: #1e3a8a;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: #f1f5f9;
+    color: #3b82f6;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Contact Section */
+.contact-content {
+    text-align: center;
+    color: #374151;
+}
+
+.contact-content p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #f1f5f9;
+    color: #3b82f6;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+/* Terminal Cursor */
+.terminal-cursor {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.cursor-blink {
+    animation: blink 1s infinite;
+    color: #3b82f6;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terminal {
+        margin: 10px;
+        border-radius: 4px;
+    }
+    
+    .terminal-body {
+        padding: 15px;
+    }
+    
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        font-size: 2em;
+    }
+    
+    .publication-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .paper-video {
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-btn {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-header {
+        padding: 8px 12px;
+    }
+    
+    .terminal-title {
+        font-size: 12px;
+    }
+    
+    .name {
+        font-size: 1.8em;
+    }
+    
+    .title {
+        font-size: 1.1em;
+    }
+    
+    .paper-title {
+        font-size: 1.1em;
+    }
+    
+    .paper-links {
+        justify-content: center;
+    }
+    
+    .link-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Selection Styling */
+::selection {
+    background: #3b82f6;
+    color: #ffffff;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Glitch Effect for Title */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.name:hover {
+    animation: glitch 0.3s ease-in-out;
+}
+
+/* BibTeX Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 0;
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.close {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #e2e8f0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+#bibtexContent {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #1e3a8a;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.copy-btn {
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+}
+
+.copy-btn:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.copy-btn:active {
+    transform: translateY(0);
+}
+
+/* BibTeX button specific styles */
+.bibtex-btn {
+    cursor: pointer;
+    border: none;
+    background: #f1f5f9;
+    color: #3b82f6;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #cbd5e1;
+    transition: all 0.3s ease;
+    font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+}
+
+.bibtex-btn:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    border-color: #3b82f6;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
